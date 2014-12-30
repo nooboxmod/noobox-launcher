@@ -1,0 +1,73 @@
+{
+  "activities": {
+    "save-bookmark": {
+      "returnValue": true, 
+      "href": "/save-bookmark.html", 
+      "disposition": "inline", 
+      "filters": {
+        "url": {
+          "pattern": "https?:.{1,16384}", 
+          "required": true
+        }, 
+        "type": "url"
+      }
+    }
+  }, 
+  "name": "Noobox Launcher", 
+  "default_locale": "pt-BR", 
+  "icons": {
+    "30": "/style/icons/30.png",
+	"128": "/style/icons/128.png"
+  }, 
+  "description": "Uma nova área de trabalho para seu Firefox OS", 
+  "messages": [
+    {
+      "alarm": "/index.html"
+    }
+  ], 
+  "connections": {
+    "notificationscomms": {
+      "rules": {}, 
+      "description": "Communication with homescreen and system for update notifications num"
+    }
+  }, 
+  "role": "homescreen", 
+  "launch_path": "/index.html#root", 
+  "permissions": {
+    "geolocation": {"description": "melhorar a precisão para resultado de busca"}, 
+    "power": {"description": "acessar função de power do aparelho"}, 
+    "open-remote-window": {"description": "abrir pagina em nova janela"}, 
+    "settings": {
+      "access": "readwrite",
+	  "description": "desintalar aplicações"
+    }, 
+    "storage": {"description": "salvar fotos e videos na galeria"}, 
+    "systemXHR": {"description": "novo launcher"}, 
+    "alarms": {"description": "executar o alarme quando ativo"}, 
+    "mobileconnection": {"description": "verificar conexoes de rede"}, 
+    "webapps-manage": {"description": "gerenciar aplicações"}
+  }, 
+  "type": "certified", 
+  "locales": {
+    "fr": {
+      "name": "Noobox Launcher", 
+      "description": "Un nouvel espace de travail pour sa Firefox OS"
+    },
+    "en-US": {
+      "name": "Noobox Launcher", 
+      "description": "A new area of work for its Firefox OS"
+    }, 
+    "pt-BR": {
+      "name": "Noobox Launcher", 
+      "description": "Uma nova área de trabalho para seu Firefox OS"
+    }, 
+    "es": {
+      "name": "Noobox Launcher", 
+      "description": "Una nueva área de trabajo para su sistema operativo Firefox"
+    }
+  }, 
+  "developer": {
+    "url": "http://noobox.org", 
+    "name": "Noobox"
+  }
+}
